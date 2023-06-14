@@ -1,5 +1,5 @@
 .cardProducto {
-    background-color: rgb(205, 205, 205);
+    background-color: rgb(223, 223, 223);
     border-radius: 10px;
     width: 15rem;
     padding: 1rem;
@@ -7,15 +7,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 0 13px 0 rgba(129, 159, 130, 0.4);
 }
 
 .imgProducto{
     width: 150px;
     object-fit: contain;
+    border: 3px solid black;
+}
+.imgProducto:hover{
+    transform: scale(1.05);
+    transition: transform 200ms ;
 }
 
 .btnProducto{
-    background-color: #630000;
+    background-color: #3aaa35;
     color: white;
     font-size: 1.2rem;
     width: 8rem;

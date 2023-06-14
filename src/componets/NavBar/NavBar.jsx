@@ -7,16 +7,16 @@ const NavBar = () => {
   return (
     <header>
         <Link to={"/"}>
-            <h1>Beer Yes</h1>
+            <img className="logo" src="./img/logo_cerveza.jpeg" alt="logo cerveza" />
         </Link>
         <nav>
             <ul>
                 <li>
-                  <NavLink to={`/categoria/2`}> Kits Clasicos </NavLink>
+                  <NavLink activeClassName="active" className="miBtn"  to={`/categoria/2`}> Kits Clasicos </NavLink>
                 </li>
 
                 <li>
-                  <NavLink to={`/categoria/3`}> Kits Premium </NavLink>
+                  <NavLink activeClassName="active" className="miBtn"  to={`/categoria/3`}> Kits Premium </NavLink>
                 </li>
 
             </ul>

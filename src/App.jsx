@@ -2,10 +2,9 @@
 import './App.css';
 import NavBar from './componets/NavBar/NavBar';
 import ItemListContainer from './componets/ItemListContainer/ItemListContainer';
-import Vista from './componets/Vista/Vista';
-import Categorias from './componets/Categorias/Categorias';
 import ItemDetailContainer from './componets/ItemDetailContainer/ItemDetailContainer';
 import Cart from './componets/Cart/Cart';
+import Checkout from './componets/Checkout/Checkout';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CarritoProvider } from './context/CarritoContext';
 
@@ -22,17 +21,11 @@ function App() {
             <Route path='/item/:idItem' element={<ItemDetailContainer />} />
             <Route path='*' element={<h2> Sitio en construcción </h2>} />
             <Route path='/cart' element = {<Cart/>} />
+            <Route path='/checkout' element = {<Checkout/>} />
           </Routes>
         </CarritoProvider>
       </BrowserRouter>
 
-
-
-
-
-      <Vista />
-
-      <Categorias />
     </>
   );
 }

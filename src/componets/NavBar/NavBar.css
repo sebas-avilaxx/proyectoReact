@@ -9,3 +9,7 @@ li {
     margin: 1rem;
     cursor: pointer;
 }
+
+.logo{
+    width: 10rem;
+}
